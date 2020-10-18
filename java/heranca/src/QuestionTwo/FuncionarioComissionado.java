@@ -1,18 +1,20 @@
 package QuestionTwo;
 
 public class FuncionarioComissionado extends Funcionario {
-	//exetends palavra reservada para herdar os métodos e atributos de determinada classe
+
 	double comissaoVenda;
+	 int controleDeVendas;
 
 	public FuncionarioComissionado(String primeiroNome, String segundoNome, double salario, double comissaoVenda) {
-		//super palavra reservada para passar os dados para super classe
+
 		super(primeiroNome, segundoNome, salario);
 		
 		this.comissaoVenda = comissaoVenda;
+		controleDeVendas = 0;
 	}
 	
-	 double calcularSalario(){
-		 return comissaoVenda + getSalario();
-	 } 
-		
+	double calcularSalario(){
+		 return controleDeVendas * comissaoVenda + getSalario();
+	} 
+	
 }

@@ -1,6 +1,19 @@
 package QuestionTwo;
 
 public class Funcionario {
+	
+
+	private String primeiroNome;
+	private String segundoNome;
+	private double salario;
+	
+
+	public Funcionario(String primeiroNome, String segundoNome, double salario) {
+		this.primeiroNome = primeiroNome;
+		this.segundoNome = segundoNome;
+		this.salario = salario;
+	}
+	
 	public String getPrimeiroNome() {
 		return primeiroNome;
 	}
@@ -22,16 +35,6 @@ public class Funcionario {
 	}
 
 	public void setSalario(double salario) {
-		this.salario = salario;
-	}
-
-	private String primeiroNome;
-	private String segundoNome;
-	private double salario;
-
-	public Funcionario(String primeiroNome, String segundoNome, double salario) {
-		this.primeiroNome = primeiroNome;
-		this.segundoNome = segundoNome;
 		this.salario = salario;
 	}
 }
