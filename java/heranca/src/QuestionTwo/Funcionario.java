@@ -3,6 +3,8 @@ package QuestionTwo;
 public class Funcionario {
 	
 
+	
+
 	private String primeiroNome;
 	private String segundoNome;
 	private double salario;
@@ -36,5 +38,11 @@ public class Funcionario {
 
 	public void setSalario(double salario) {
 		this.salario = salario;
+	}
+	
+	@Override
+	public String toString() {
+		return "[primeiroNome=" + primeiroNome + ", segundoNome=" + segundoNome + ", salario fixo=" + salario
+				+ "]";
 	}
 }
